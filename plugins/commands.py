@@ -558,17 +558,19 @@ async def start(client, message):
                 button = [[
                     InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}')
                 ]]
-            else:
-                button = [[
-                    
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ]]
-            msg = await client.send_cached_media(
-        chat_id=message.from_user.id,
-        file_id=file_id,
-        caption=f_caption,
-        protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup(button)
+
+   
+    else:
+       button = [[
+          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+       ]]
+       
+       msg = await client.send_cached_media(
+       chat_id=message.from_user.id,
+       file_id=file_id,
+       caption=f_caption,
+       protect_content=True if pre == 'filep' else False,
+       reply_markup=InlineKeyboardMarkup(button)
     )
   # btn = [[
   #     InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
