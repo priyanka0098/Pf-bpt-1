@@ -2782,29 +2782,28 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'𝐐𝐔𝐀𝐋𝐈𝐓𝐘', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("𝐄𝐏𝐈𝐒𝐎𝐃𝐄", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("𝐒𝐄𝐀𝐒𝐎𝐍",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("𝐒𝐄𝐍𝐃 𝐀𝐋𝐋", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄", callback_data=f"languages#{key}"),
+            
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'𝐐𝐔𝐀𝐋𝐈𝐓𝐘', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("𝐄𝐏𝐈𝐒𝐎𝐃𝐄", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("𝐒𝐄𝐀𝐒𝐎𝐍",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("𝐒𝐄𝐍𝐃 𝐀𝐋𝐋", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄", callback_data=f"languages#{key}"),
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
