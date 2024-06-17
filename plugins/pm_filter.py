@@ -2091,17 +2091,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "hey":
-        buttons = [[
-            InlineKeyboardButton('⇚Back', callback_data='start')
+        btn = [[
+            InlineKeyboardButton('Send Payment Screenshot', url="t.me/Unknown_Support_Bot") 
+        ],[
+            InlineKeyboardButton('Close', callback_data='close_data')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
+        reply_markup = InlineKeyboardMarkup(btn)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PAYMENT_QR))
+            InputMediaPhoto(random.choice(QR))
         )
         await query.message.edit_text(
-            text=script.SUBSCRIPTION_TXT.format(REFERAL_PREMEIUM_TIME, temp.U_NAME, query.from_user.id, REFERAL_COUNT),
+            text=script.PAYMENT_TEXT.format(REFERAL_PREMEIUM_TIME, temp.U_NAME, query.from_user.id, REFERAL_COUNT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
