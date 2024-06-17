@@ -44,7 +44,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data="premium")
+                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='subscription')
             ],[
                 InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ', url='http://t.me/Unknown_Support_Bot')
             ]]
@@ -52,7 +52,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='premium')
+                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='subscription')
             ],[
                 InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ', url='http://t.me/Unknown_Support_Bot')
             ]]
