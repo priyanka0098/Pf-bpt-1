@@ -30,6 +30,32 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
 ʙᴜʏ ᴘᴀɪᴅ ᴘʟᴀɴ ʙʏ - /plan</b>"""
 
+    PAYMENT_TEXT = """
+ <b>⚡️Buy Premium Now
+
+ ╭━━━━━━━━╮
+    Premium Plans
+  • ₹5 - 1 day 
+  • ₹19 - 1 Week 
+  • ₹29 - 1 Month
+  • ₹79 - 3 Months
+  • ₹139 - 6 Months
+  • ₹269 - 1 Year
+ ╰━━━━━━━━╯
+
+ UPI ID - <code>unknownbolte@ybl</code>
+
+ Premium Features:
+ 
+☆ New/Old Movies, Series and Animes etc 
+☆ High Quality available
+☆ Get Files Directly 
+☆ Full Admin support 
+☆ Request will be completed in some hours if available.</b>"""
+
+ 
+    
+
 
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
