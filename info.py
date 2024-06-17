@@ -71,7 +71,7 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Unknown_Support_Bot') # owner us
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/UnknownCinema')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/UnknownCinema')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/aisedownloadkaro/19')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/aisedownloadkaro/21')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'UnknownCinema') # Support Chat Link Without https:// or @
 
 # True Or False
@@ -96,17 +96,17 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', True))
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'publicearn.com')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '6f89c6ca381bafcf81f338701c438a094139be78')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'inshorturl.com')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '8d32c9e87c50c10371bb3b00d386a73ee9b6d53c')
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'publicearn.com')
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '6f89c6ca381bafcf81f338701c438a094139be78')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/aisedownloadkaro/19')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'inshorturl.com')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '8d32c9e87c50c10371bb3b00d386a73ee9b6d53c')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/aisedownloadkaro/21')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '6f89c6ca381bafcf81f338701c438a094139be78')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'inshorturl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '8d32c9e87c50c10371bb3b00d386a73ee9b6d53c')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
