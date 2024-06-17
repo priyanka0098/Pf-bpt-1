@@ -465,7 +465,7 @@ async def start(client, message):
                     btn = [[
                         InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("Wᴀᴛᴄʜ Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=VERIFY_TUTORIAL)
                     ],[
                         InlineKeyboardButton('Rᴇᴍᴏᴠᴇ Aᴅs', callback_data='buy_premium')
                     ]]
@@ -525,23 +525,23 @@ async def start(client, message):
             logger.exception(e)
             f_caption=f_caption
     if f_caption is None:
-        f_caption = f"  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
+        f_caption = f"@VJ_Bots  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
     if not await db.has_premium_access(message.from_user.id):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
                 InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
             ],[
-                InlineKeyboardButton('Hᴏᴡ Tᴏ Vᴇʀɪғʏ', url=VERIFY_TUTORIAL)
-            ],[
+                InlineKeyboardButton("Wᴀᴛᴄʜ Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=VERIFY_TUTORIAL)
+            ][
                 InlineKeyboardButton('Rᴇᴍᴏᴠᴇ Aᴅs', callback_data='buy_premium')
             ]]
             await message.reply_text(
                 text="<b>You are not verified !\nKindly verify to continue !</b>",
                 protect_content=True,
                 reply_markup=InlineKeyboardMarkup(btn)
-            )          
-          return
-    if STREAM_MODE == True::
+            )
+            return
+    if STREAM_MODE == True:
         button = [[
             InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
         ]]
