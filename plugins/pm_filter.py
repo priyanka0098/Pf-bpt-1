@@ -1977,7 +1977,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='premium')
+                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='subscription')
             ],[
                 InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ', url='http://t.me/Unknown_Support_Bot')
             ]]
@@ -1985,7 +1985,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='premium')
+                InlineKeyboardButton('Vɪᴇᴡ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data='subscription')
             ],[
                 InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ', url='http://t.me/Unknown_Support_Bot')
             ]]
@@ -2093,7 +2093,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "premium":
+    elif query.data == "subscription":
         buttons = [[
             InlineKeyboardButton('⇚Back', callback_data='start')
         ]]
