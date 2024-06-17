@@ -94,9 +94,10 @@ async def start(client, message):
                 text = "**🕵️ Jᴏɪɴ Tʜᴇ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Mᴏᴠɪᴇ Fɪʟᴇ\n\n👨‍💻 Fɪʀsᴛ Cʟɪᴄᴋ Oɴ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ, Tʜᴇɴ Cʟɪᴄᴋ Oɴ Rᴇǫᴜᴇsᴛ Tᴏ Jᴏɪɴ Bᴜᴛᴛᴏɴ.**"
         else:
             text = "**🕵️ Jᴏɪɴ Tʜᴇ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Mᴏᴠɪᴇ Fɪʟᴇ\n\n👨‍💻 Fɪʀsᴛ  Cʟɪᴄᴋ Oɴ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ, Tʜᴇɴ Jᴏɪɴ Cʜᴀɴɴᴇʟ Aғᴛᴇʀ Cʟɪᴄᴋ Oɴ Tʀʏ Aɢᴀɪɴ Bᴜᴛᴛᴏɴ**"
-        await client.send_message(
+        await client.send_photo(
             chat_id=message.from_user.id,
-            text=text,
+            photo="https://graph.org/file/2e6c241c49c3e8de01d5a.jpg",
+            caption="**You are not in our channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -410,7 +411,7 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("Remove Ads ", callback_data='buy_premium')
+                        InlineKeyboardButton("Remove Ads ", callback_data='subscription')
                     ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -478,7 +479,7 @@ async def start(client, message):
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
 
                     ],[
-                        InlineKeyboardButton('Remove Ads ', callback_data='buy_premium')
+                        InlineKeyboardButton('Remove Ads ', callback_data='subscription')
                     ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -545,7 +546,7 @@ async def start(client, message):
                 InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
 
             ],[
-                InlineKeyboardButton('Remove Ads', callback_data='buy_premium')
+                InlineKeyboardButton('Remove Ads', callback_data='subscription')
             ]]
             await message.reply_text(
                 text="<b>You are not verified !\nKindly verify to continue !</b>",
