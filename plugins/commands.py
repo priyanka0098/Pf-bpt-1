@@ -269,7 +269,7 @@ async def start(client, message):
              #  await asyncio.sleep(600)
              #  for x in filesarr:
                #    await x.delete()
-            ₹   await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+            #   await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
             
             except Exception as e:
                 logger.warning(e, exc_info=True)
