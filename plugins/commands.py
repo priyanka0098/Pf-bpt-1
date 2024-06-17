@@ -539,8 +539,8 @@ async def start(client, message):
                 text="<b>You are not verified !\nKindly verify to continue !</b>",
                 protect_content=True,
                 reply_markup=InlineKeyboardMarkup(btn)
-            )
-            return
+            )          
+          return
     if STREAM_MODE == True::
         button = [[
             InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
