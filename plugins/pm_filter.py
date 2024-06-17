@@ -2097,13 +2097,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(QR))
-        )
-        await query.message.edit_text(
-            text=script.PAYMENT_TEXT.format(REFERAL_PREMEIUM_TIME, temp.U_NAME, query.from_user.id, REFERAL_COUNT),
+        await query.message.reply_photo(
+            photo=(https://graph.org/file/7e72a760f0a5172fae00c.jpg),
+            caption=script.PAYMENT_TEXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
