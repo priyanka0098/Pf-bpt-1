@@ -2098,7 +2098,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_photo(
-            photo=(https://graph.org/file/7e72a760f0a5172fae00c.jpg),
+            photo=(QR),
             caption=script.PAYMENT_TEXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
