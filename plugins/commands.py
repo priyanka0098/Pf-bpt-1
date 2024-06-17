@@ -409,7 +409,7 @@ async def start(client, message):
                         InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
-                    ][
+                    ],[
                         InlineKeyboardButton("Remove Ads ", callback_data='buy_premium')
                     ]]
                     await message.reply_text(
