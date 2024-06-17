@@ -411,7 +411,7 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("Remove Ads ", callback_data='subscription')
+                        InlineKeyboardButton("Remove Ads ", callback_data='hey')
                     ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -479,7 +479,7 @@ async def start(client, message):
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
 
                     ],[
-                        InlineKeyboardButton('Remove Ads ', callback_data='subscription')
+                        InlineKeyboardButton('Remove Ads ', callback_data='hey')
                     ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -546,7 +546,7 @@ async def start(client, message):
                 InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
 
             ],[
-                InlineKeyboardButton('Remove Ads', callback_data='subscription')
+                InlineKeyboardButton('Remove Ads', callback_data='hey')
             ]]
             await message.reply_text(
                 text="<b>You are not verified !\nKindly verify to continue !</b>",
