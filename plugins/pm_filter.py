@@ -2076,20 +2076,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "subscription":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url="https://github.com/VJBots/VJ-FILTER-BOT")
-        ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start')
+            
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            InputMediaPhoto(random.choice(PAYMENT_QR))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.U_NAME, temp.B_NAME),
+            text=script.PAYMENT_TEXT.format(temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
