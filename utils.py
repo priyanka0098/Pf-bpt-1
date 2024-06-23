@@ -571,13 +571,21 @@ async def get_token(bot, userid, link):
     token = ''.join(random.choices(string.ascii_letters + string.digits, k=7))
     TOKENS[user.id] = {token: False}
     link = f"{link}verify-{user.id}-{token}"
+    status = await get_verify_status(user.id)
+    date_var = status["date"]
+    time_var = status["time"]
+    hour, minute, second = time_var.split(":")
+    year, month, day = date_var.split("-")
+    last_date, last_time = str((datetime(year=int(year), month=int(month), day=int(day), hour=int(hour=24), minute=int(minute), second=int(second)))-timedelta(hours=12)).split(" ")
+    tz = pytz.timezone('Asia/Kolkata')
+    curr_date, curr_time = str(datetime.now(tz)).split(" ")
     shortened_verify_url = await get_verify_shorted_link(link, VERIFY_SHORTLINK_URL, VERIFY_SHORTLINK_API)
-    if VERIFY_SECOND_SHORTNER == True:
-        snd_link = await get_verify_shorted_link(shortened_verify_url, VERIFY_SND_SHORTLINK_URL, VERIFY_SND_SHORTLINK_API)
-        return str(snd_link)
-    else:
+    if last_date == curr_date:
         return str(shortened_verify_url)
-
+    else:
+        return str(shortened_verify_url)        
+            
+   
 async def get_verify_status(userid):
     status = temp.VERIFY.get(userid)
     if not status:
