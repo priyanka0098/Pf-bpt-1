@@ -407,7 +407,7 @@ async def start(client, message):
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
                     ],[
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
                     ],[
@@ -474,7 +474,7 @@ async def start(client, message):
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
                     ],[
                         InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
 
@@ -541,7 +541,7 @@ async def start(client, message):
     if not await db.has_premium_access(message.from_user.id):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
-                InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
             ],[
                 InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
 
