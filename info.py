@@ -104,7 +104,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '8d32c9e87c50
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/aisedownloadkaro/21')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'inshorturl.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '8d32c9e87c50c10371bb3b00d386a73ee9b6d53c')
 
