@@ -1431,7 +1431,7 @@ async def plans_cmd_handler(client, message):
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
-        photo=PAYMENT_QR,
+        photo=QRR,
         caption=script.PAYMENT_TEXT,
         reply_markup=reply_markup
     )
@@ -1447,15 +1447,15 @@ async def check_plans_cmd(client, message):
         await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
     else:
         btn = [ 
-            [InlineKeyboardButton("Gᴇᴛ Fʀᴇᴇ Tʀᴀɪʟ Fᴏʀ 5 Mɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
-            [InlineKeyboardButton("Remove Ads ", callback_data="buy_premium")],
+            [InlineKeyboardButton("Get Free Trail For 5 Minutes", callback_data="get_trail")],
+            [InlineKeyboardButton("Remove Ads ", callback_data="hey")],
             [InlineKeyboardButton("Close", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
+     #  m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
         await message.reply_text(f"**😢 You Don't Have Any Premium Subscription.\n\n Check Out Our Premium /plan**",reply_markup=reply_markup)
-        await asyncio.sleep(2)
-        await m.delete()
+     #  await asyncio.sleep(2)
+      # await m.delete()
 
 @Client.on_message(filters.command("totalrequests") & filters.private & filters.user(ADMINS))
 async def total_requests(client, message):
