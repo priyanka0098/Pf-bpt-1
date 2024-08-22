@@ -233,7 +233,7 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """<b>{file_name}</b>
     
-@UnknownCinema"""
+@SvFilmsX_Official"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
