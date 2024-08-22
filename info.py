@@ -52,9 +52,9 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://AutoFilter:B2v1nAKDMuGmyWJ9@cluster0.kdqcnvh.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "AutoFilter")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutoFilter')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Sunilvs2024:Sunilvs2024@cluster0.fdkbx.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Sunilvs2024")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Sunilvs2024')
 
 
 # Premium And Referal Settings
