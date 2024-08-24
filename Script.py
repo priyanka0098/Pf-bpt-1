@@ -43,7 +43,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
   • ₹269 - 1 Year
  ╰━━━━━━━━╯
 
- UPI ID - <code>BHARATPE09917110955@yesbankitd</code>
+ UPI ID - <code>BHARATPE09917110955@yesbankltd</code>
 
  Premium Features:
  
